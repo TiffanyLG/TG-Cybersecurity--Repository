@@ -1,2 +1,2 @@
 # TG-Cybersecurity--Repository
-This repository includes all my scripts, diagrams, networking, and projects created.
+This repository includes all my scripts, diagrams, networking, and projects created for 2021 Cybersecurity Bootcamp. 
