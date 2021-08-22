@@ -36,4 +36,5 @@
     - name: Enable docker service
       systemd:
         name: docker
+        daemon_reload: yes
         enabled: yes
