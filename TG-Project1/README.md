@@ -88,8 +88,8 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat: It is a lightweight shipper for forwarding and centralizing log data usually in instances like kibana.
-- Metricbeat: It is a detailed shipper for metrics whereby it collect amd monitors metrics from your system and servers.
+- Filebeat: It collects DATA about the file system such as log data and forwards the system logs to an easy to read format.
+- Metricbeat: It collects machine METRICS such as CPU usage and uptime. It collects metrics from your system and services and makes it easy to monitor specific information about the machines in the network.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
