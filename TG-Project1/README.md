@@ -111,7 +111,9 @@ SSH into the control node and follow the steps below:
 - Once completed, you can verify the installation and playbooks worked by verifying that the ELK stack is receiving logs.
 
 ![Screenshot](Images/Filebeat_System_Snapshot.jpg)
+![Screenshot](Filebeat_Dashboard.jpg)
 ![Screenshot](Images/Metricbeat_System_Snapshot.jpg)
+![Screenshot](Metricbeat_Dashboard.jpg)
 
 
 
