@@ -110,7 +110,8 @@ SSH into the control node and follow the steps below:
 - Run the playbooks, ansible-playbook filebeat-playbook.yml and ansible-playbook metricbeat-playbook.yml for each.
 - Once completed, you can verify the installation and playbooks worked by verifying that the ELK stack is receiving logs.
 
-![Screenshot](Images/
+![Screenshot](Images/Filebeat_System_Snapshot.jpg)
+![Screenshot](Images/Metricbeat_System_Snapshot.jpg)
 
 
 
