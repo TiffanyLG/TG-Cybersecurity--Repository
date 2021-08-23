@@ -98,13 +98,17 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the webservers groups with Web-1, Web-2, and Web-3 IP addresses and the elk group with the Elk Server IP to Ansible's inventory and also include python3 interpreter.
 
 ![Screenshot](Images/Webserver_Elk_Hostgroups.JPG)
-- Once the groups have been set, create a playbook which in our case is the Install-Elk.yml.  
+- Once the groups have been set, create a playbook (Install-ELK.yml).
 - Run the playbook, and navigate to http://52.162.176.157:5601/app/kibana to check that the installation worked as expected.
 
 ![Screenshot](Images/Kibana_Snapshot.jpg)
 
 ### Using Filebeat and Metricbeat
-- In your etc/ansible directory, find the filebeat configuration yml file
+- In your etc/ansible directory, find the matching configuration files for filebeat (filebeat.config) and metricbeat (metricbeat.config).
+- For filebeat, scroll to line #1106 and replace the IP address with the internal IP address of the ELK server. Then scroll to line #1806 and replace the IP address with the internal IP address of the ELK server.  
+- For metricbeat, change the default IP addresses to your EL Stack IP address.
+- Run the playbooks, ansible-playbook filebeat-playbook.yml and ansible-playbook metricbeat-playbook.yml for each.
+
 
 
 
