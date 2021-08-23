@@ -30,7 +30,6 @@ Load balancer are designed to be secure your network by disbursing traffic to di
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name                 | Function  | IP Address - Public | IP Address - Private | Operating System   |
 |----------------------|-----------|---------------------|----------------------|--------------------|
@@ -95,9 +94,10 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- 1. Copy the ansible.cfg file to etc/ansible directory inside the ansible container.
+- Copy the ansible.cfg file to etc/ansible directory inside the ansible container.
 - Update the hosts file to include the webservers groups with Web-1, Web-2, and Web-3 IP addresses to Ansible's inventory and also include python3 interpreter.
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+![Host](Diagrams/Webserver_Elk_Hostgroups.jpg)
+- Run the playbook, and navigate to http://52.162.176.157:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
