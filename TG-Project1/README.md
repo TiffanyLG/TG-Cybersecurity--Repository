@@ -94,11 +94,11 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the ansible.cfg file and the Install-elk.yml files to the $ etc/ansible directory inside the ansible container.
-- Update the hosts file to include the webservers groups with Web-1, Web-2, and Web-3 IP addresses to Ansible's inventory and also include python3 interpreter.
+- Copy the ansible.cfg file to the $ etc/ansible directory inside the ansible container.
+- Update the hosts file to include the webservers groups with Web-1, Web-2, and Web-3 IP addresses and the elk group with the Elk Server IP to Ansible's inventory and also include python3 interpreter.
 
 ![Screenshot](Images/Webserver_Elk_Hostgroups.JPG)
-
+- Once the groups have been set, create a playbook which in our case is the Install-Elk.yml.  
 - Run the playbook, and navigate to http://52.162.176.157:5601/app/kibana to check that the installation worked as expected.
 
 ![Screenshot](Images/Kibana_Snapshot.jpg)
