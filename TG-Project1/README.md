@@ -108,6 +108,9 @@ SSH into the control node and follow the steps below:
 - For filebeat, scroll to line #1106 and replace the IP address with the internal IP address of the ELK server. Then scroll to line #1806 and replace the IP address with the internal IP address of the ELK server.  
 - For metricbeat, change the default IP addresses to your EL Stack IP address.
 - Run the playbooks, ansible-playbook filebeat-playbook.yml and ansible-playbook metricbeat-playbook.yml for each.
+- Once completed, you can verify the installation and playbooks worked by verifying that the ELK stack is receiving logs.
+
+![Screenshot](Images/
 
 
 
