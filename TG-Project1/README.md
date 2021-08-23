@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Network Diagram](Diagrams/diagram.JPG)
  
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
 
   - [My Playbook](Ansible/my_playbook.yml)
   - [Install ELK Stack Playbook](Ansible/Install-ELK.yml)
@@ -25,7 +25,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancer are designed to be secure your network by disbursing traffic to different web servers in the resource pool to ensure that no single server becomes overworked and subsequently unreliable. Jump boxes are usually a single audit point for traffic where prospective administrators must log into in order to gain access to the DMZ assets and all access can be logged for a later audit. It is usually security hardened and treated as a single entryway and a "pivot server" to access other servers within your network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
 
@@ -88,14 +88,14 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat: It collects DATA about the file system such as log data and forwards the system logs to an easy to read format.
+- Filebeat: It collects data about the file system such as LOG DATA and forwards the system logs to an easy to read format.
 - Metricbeat: It collects machine METRICS such as CPU usage and uptime. It collects metrics from your system and services and makes it easy to monitor specific information about the machines in the network.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
+- Copy the  file to _____.
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
