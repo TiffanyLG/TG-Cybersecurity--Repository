@@ -94,7 +94,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the ansible.cfg file to the $ etc/ansible directory inside the ansible container.
+- Copy the ansible.cfg file and the  to the $ etc/ansible directory inside the ansible container.
 - Update the hosts file to include the webservers groups with Web-1, Web-2, and Web-3 IP addresses to Ansible's inventory and also include python3 interpreter.
 
 ![Screenshot](Images/Webserver_Elk_Hostgroups.JPG)
@@ -104,6 +104,7 @@ SSH into the control node and follow the steps below:
 ![Screenshot](Images/Kibana_Snapshot.jpg)
 
 ### Using Filebeat and Metricbeat
+- In your etc/ansible directory, find the filebeat configuration yml file
 
 
 
