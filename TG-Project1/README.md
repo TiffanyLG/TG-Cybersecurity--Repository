@@ -101,7 +101,7 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to http://52.162.176.157:5601/app/kibana to check that the installation worked as expected.
 
-![Screenshot](Images/Kibana Snapshot.jpg)
+![Screenshot](Images/Kibana_Snapshot.jpg)
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
